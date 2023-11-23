@@ -14,7 +14,8 @@
     "core-js": "^3.8.3",
     "normalize.css": "^8.0.1",
     "simple-keyboard": "^3.7.21",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

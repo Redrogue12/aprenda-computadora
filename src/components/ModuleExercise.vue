@@ -1,0 +1,153 @@
+<template>
+  <div class="container">
+    <div>
+      <h1>Explorando el Teclado</h1>
+
+      <h2>{{ currentExercise.title }}</h2>
+
+      <div class="explanation-container">
+        <div v-html="currentExercise.explanation" class="instruction-p"></div>
+        <img class="explanation-img" v-if="imageSrc" :src="`/imgs${imageSrc}`" alt="Partes del teclado">
+      </div>
+      <h3 v-if="currentExercise.taskText">{{ currentExercise.taskText }}</h3>
+
+      <div
+        v-if="currentExercise.textarea"
+        class="exercise-wrapper"
+      >
+        <p
+          v-if="currentExercise.objective === 'MATCH' && !isCorrect" class="red"
+        >
+          continue intentando
+        </p>
+        <img
+          v-else
+          class="success-img"
+          v-show="currentExercise.objective === 'MATCH' && isCorrect"
+          src="/imgs/muy-bien.png"
+        />
+        <input
+          :value="input"
+          class="task-input"
+          @input="onInputChange"
+          placeholder="Escriba aquí"
+        >
+      </div>
+
+      <div v-if="currentExercise.keyboard" class="w-100 center">
+        <SimpleKeyboard :keys="currentExercise.keys" @onChange="onChange" @onKeyPress="onKeyPress" :input="input" />
+      </div>
+    </div>
+    <div id="exercise-btn-container">
+      <router-link
+        v-if="exerciseInt > 0"
+        :to="`/module/${module}/exercise/${previousExercise}`"
+      >
+        <button
+          class="exercise-btn" 
+          style="margin-right: 20px"
+        >
+          Regresar
+        </button>
+      </router-link>
+      <router-link
+        :to="`/module/${module}/exercise/${nextExercise}`"
+        v-slot="{navigate}"
+        custom
+      >
+        <button
+          class="exercise-btn"
+          @click="nextPage(navigate)"
+        >
+          Continuar
+        </button>
+      </router-link>
+    </div>
+  </div>
+</template>
+
+<script>
+import SimpleKeyboard from "./SimpleKeyboard.vue";
+import module from "../assets/modules/module-1.json";
+
+export default {
+  name: "ModuleExercise",
+  components: {
+    SimpleKeyboard
+  },
+  props: [
+    'module',
+    'exercise'
+  ],
+  data: () => ({
+    input: "",
+  }),
+  computed: {
+    exerciseInt() {
+      return Number(this.exercise);
+    },
+    currentExercise() {
+      return module[this.exerciseInt];
+    },
+    moduleLength() {
+      return module.length;
+    },
+    previousExercise() {
+      return this.exerciseInt - 1;
+    },
+    nextExercise() {
+      return this.exerciseInt + 1;
+    },
+    imageSrc() {
+      return this.currentExercise.imageSrc;
+    },
+    isCorrect() {
+      const { objective } = this.currentExercise;
+      if (objective === "FREE") return true;
+      else if (objective === "MATCH") return this.input === this.currentExercise.match;
+      else return true;
+    },
+  },
+  created() {
+    if (this.exerciseInt >= this.moduleLength) this.$router.push('/')
+  },
+  methods: {
+    onChange(input) {
+      this.input = input;
+    },
+    onKeyPress(button) {
+      console.log("button", button);
+    },
+    onInputChange(input) {
+      this.input = input.target.value;
+    },
+    nextPage(navigate) {
+      if (this.isCorrect && this.exerciseInt < this.moduleLength)
+      navigate()
+    }
+  }
+};
+</script>
+
+<style scoped>
+.container {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1040px;
+  margin: auto;
+}
+
+.exercise-wrapper {
+  position: relative;
+  margin-top: 40px;
+}
+.success-img {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+</style>
