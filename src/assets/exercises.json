@@ -1,0 +1,53 @@
+[
+  {
+    "title": "",
+    "explanation": "Instrucciones Generales: Este laboratorio le llevará paso a paso a identificar todos los componentes del teclado y las funciones de cada tecla.​ </br></br> Lea bien y siga las instrucciones.​ </br></br> 1. En las definiciones y ejercicios las teclas estarán identificadas según el siguiente ejemplo con el fondo negro y la letra blanca: <span class='key-highlight'>Tab</span> </br></br> 2. Pulse el botón abajo <b>(Continuar)</b> para continuar los ejercicios. Si desea repetir el ejercicio puede darle <b>Continuar</b> y luego <b>Regresar</b> para repetirlo​​",
+    "task": false,
+    "objective": "FREE",
+    "keyboard": false,
+    "keys": "",
+    "textarea": false,
+    "imageSrc": ""
+  },
+  {
+    "title": "Partes del Teclado",
+    "explanation": "El teclado de la computadora tiene la misma configuración del teclado de la maquinilla. El mismo ha ido evolucionando y se han añadido algunas teclas y se han aumentado sus funciones. Aunque todos los teclados deberían ser iguales, es posible que algunos símbolos podrían verse diferentes y algunos nombres de las teclas son abreviados. Verifique su teclado mientras realiza los ejercicios y observe bien las ilustraciones de las localizaciones de las teclas para que no tenga dudas. El ejercicio se hará con el teclado  idioma Inglés que se usa en Puerto Rico, que no tiene algunos caracteres del lenguaje español.​ </br></br> El teclado se divide en 5 partes.",
+    "task": "Mueve el ratón sobre el dibujo para iluminar cada parte.",
+    "objective": "FREE",
+    "keyboard": false,
+    "keys": "",
+    "textarea": false,
+    "imageSrc": "/1-keyboard-parts.png"
+  },
+    {
+    "title": "Teclas de escritura",
+    "explanation": "Las teclas de Escritura incluyen las que se utilizan para escribir, mover y editar texto tales como; Letras, Símbolos,  Tabulador <span class='key-highlight'>Tab</span>, Bloqueo de Mayúscula <span class='key-highlight'>Caps Lock</span>, Retroceso <span class='key-highlight'>Backspace</span>, Fijador de Mayúscula <span class='key-highlight'>Shift</span>, Barra Espaciadora <span class='key-highlight'>Space Bar</span> y Entrada <span class='key-highlight'>Enter</span>. Con la excepción de la tecla <span class='key-highlight'>Shift</span> y <span class='key-highlight'>Caps Lock</span> todas las demás teclas deben presionarse una sola vez, de lo contrario se repetirán hasta que sueltes la tecla. ",
+    "taskText": "Observe el siguiente cuadro. Presione cualquier tecla de su teclado durante 3 segundos y observe lo que ocurre.",
+    "objective": "FREE",
+    "keyboard": false,
+    "textarea": true,
+    "keys": "",
+    "imageSrc": "/2-main-keys.png"
+  },
+  {
+    "title": "Teclas de escritura - Letras",
+    "explanation": "Las teclas de letra se encuentran en el mismo centro del teclado. Incluyen todas las letras del abecedario.",
+    "taskText": "Escriba su nombre en el cuadro de texto inferior:",
+    "objective": "FREE",
+    "keyboard": false,
+    "textarea": true,
+    "keys": "",
+    "imageSrc": "/3-letter-keys.png"
+  },
+  {
+    "title": "Teclas de Escritura - Números y Signos",
+    "explanation": "Las teclas numéricas se encuentran en la parte superior del teclado. Incluye los números del 0 al nueve. Sobre los números se encuentran los signos numéricos más utilizados. </br></br> Las que están en el teclado numérico a la derecha todavía no las use. Para escribir los números simplemente presionas la tecla del número que desees.",
+    "taskText": "En el cuatro de abajo intenta escribir: 435",
+    "objective": "MATCH",
+    "match": "435",
+    "keyboard": false,
+    "textarea": true,
+    "keys": "",
+    "imageSrc": "/4-numbers-signs.png"
+  }
+]
