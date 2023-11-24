@@ -68,7 +68,7 @@
 
 <script>
 import SimpleKeyboard from "./SimpleKeyboard.vue";
-import module from "../assets/modules/module-1.json";
+import modules from "../assets/modules/index";
 
 export default {
   name: "ModuleExercise",
@@ -81,16 +81,17 @@ export default {
   ],
   data: () => ({
     input: "",
+    modules,
   }),
   computed: {
     exerciseInt() {
       return Number(this.exercise);
     },
     currentExercise() {
-      return module[this.exerciseInt];
+      return this.modules[this.module][this.exerciseInt];
     },
     moduleLength() {
-      return module.length;
+      return this.modules[this.module].length;
     },
     previousExercise() {
       return this.exerciseInt - 1;
