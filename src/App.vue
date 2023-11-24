@@ -1,6 +1,8 @@
 <template>
   <navbar />
-  <router-view :key="$route.fullPath" />
+  <div style="padding: 20px;">
+    <router-view :key="$route.fullPath" />
+  </div>
 </template>
 
 <script>
