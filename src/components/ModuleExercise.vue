@@ -3,27 +3,27 @@
     <div>
       <h1>Explorando el Teclado</h1>
 
-      <h2>{{ currentExercise.title }}</h2>
+      <h2>{{ currentExercise?.title }}</h2>
 
       <div class="explanation-container">
-        <div v-html="currentExercise.explanation" class="instruction-p"></div>
+        <div v-html="currentExercise?.explanation" class="instruction-p"></div>
         <img class="explanation-img" v-if="imageSrc" :src="`/imgs${imageSrc}`" alt="Partes del teclado">
       </div>
-      <h3 v-if="currentExercise.taskText">{{ currentExercise.taskText }}</h3>
+      <h3 v-if="currentExercise?.taskText">{{ currentExercise?.taskText }}</h3>
 
       <div
-        v-if="currentExercise.textarea"
+        v-if="currentExercise?.textarea"
         class="exercise-wrapper"
       >
         <p
-          v-if="currentExercise.objective === 'MATCH' && !isCorrect" class="red"
+          v-if="currentExercise?.objective === 'MATCH' && !isCorrect" class="red"
         >
           continue intentando
         </p>
         <img
           v-else
           class="success-img"
-          v-show="currentExercise.objective === 'MATCH' && isCorrect"
+          v-show="currentExercise?.objective === 'MATCH' && isCorrect"
           src="/imgs/success-message-img.png"
         />
         <input
@@ -34,8 +34,8 @@
         >
       </div>
 
-      <div v-if="currentExercise.keyboard" class="w-100 center">
-        <SimpleKeyboard :keys="currentExercise.keys" @onChange="onChange" @onKeyPress="onKeyPress" :input="input" />
+      <div v-if="currentExercise?.keyboard" class="w-100 center">
+        <SimpleKeyboard :keys="currentExercise?.keys" @onChange="onChange" @onKeyPress="onKeyPress" :input="input" />
       </div>
     </div>
     <div id="exercise-btn-container">
@@ -69,16 +69,38 @@
 <script>
 import SimpleKeyboard from "./SimpleKeyboard.vue";
 import modules from "../assets/modules/index";
+import { defineProps } from "vue";
+
+defineProps({
+  module: {
+    type: String,
+    required: true,
+    default: "0"
+  },
+  exercise: {
+    type: String,
+    required: true,
+    default: "0"
+  }
+})
 
 export default {
   name: "ModuleExercise",
   components: {
     SimpleKeyboard
   },
-  props: [
-    'module',
-    'exercise'
-  ],
+  props: {
+    module: {
+      type: String,
+      required: true,
+      default: "0"
+    },
+    exercise: {
+      type: String,
+      required: true,
+      default: "0"
+    }
+  },
   data: () => ({
     input: "",
     modules,
@@ -100,7 +122,7 @@ export default {
       return this.exerciseInt + 1;
     },
     imageSrc() {
-      return this.currentExercise.imageSrc;
+      return this.currentExercise?.imageSrc;
     },
     isCorrect() {
       const { objective } = this.currentExercise;
