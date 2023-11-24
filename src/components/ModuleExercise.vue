@@ -69,20 +69,6 @@
 <script>
 import SimpleKeyboard from "./SimpleKeyboard.vue";
 import modules from "../assets/modules/index";
-import { defineProps } from "vue";
-
-defineProps({
-  module: {
-    type: String,
-    required: true,
-    default: "0"
-  },
-  exercise: {
-    type: String,
-    required: true,
-    default: "0"
-  }
-})
 
 export default {
   name: "ModuleExercise",
