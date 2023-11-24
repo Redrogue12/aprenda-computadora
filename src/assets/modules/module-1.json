@@ -19,7 +19,7 @@
     "textarea": false,
     "imageSrc": "/1-keyboard-parts.png"
   },
-    {
+  {
     "title": "Teclas de escritura",
     "explanation": "Las teclas de Escritura incluyen las que se utilizan para escribir, mover y editar texto tales como; Letras, Símbolos,  Tabulador <span class='key-highlight'>Tab</span>, Bloqueo de Mayúscula <span class='key-highlight'>Caps Lock</span>, Retroceso <span class='key-highlight'>Backspace</span>, Fijador de Mayúscula <span class='key-highlight'>Shift</span>, Barra Espaciadora <span class='key-highlight'>Space Bar</span> y Entrada <span class='key-highlight'>Enter</span>. Con la excepción de la tecla <span class='key-highlight'>Shift</span> y <span class='key-highlight'>Caps Lock</span> todas las demás teclas deben presionarse una sola vez, de lo contrario se repetirán hasta que sueltes la tecla. ",
     "taskText": "Observe el siguiente cuadro. Presione cualquier tecla de su teclado durante 3 segundos y observe lo que ocurre.",
@@ -49,5 +49,16 @@
     "textarea": true,
     "keys": "",
     "imageSrc": "/4-numbers-signs.png"
+  },
+  {
+    "title": "Teclas de Escritura - Signos",
+    "explanation": "Observe las teclas que tienen más de un objeto, sea números o símbolos. Uno está localizado en la parte superior y el otro en la parte inferior. Para obtener el objeto que está en la parte superior deberá; </br></br> 1. Presionar y sostener la tecla  Shift </br></br> 2. Presionar la tecla deseada </br></br> 3. Soltar la tecla  Shift",
+    "taskText": "Intenta escribir: 548*4+4,000/2=4,192",
+    "objective": "MATCH",
+    "match": "548*4+4,000/2=4,192",
+    "keyboard": false,
+    "textarea": true,
+    "keys": "",
+    "imageSrc": "/5-sign-keys.png"
   }
 ]

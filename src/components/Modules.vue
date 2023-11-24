@@ -2,10 +2,11 @@
   <div id="modules-container">
     <h1>Modulos</h1>
     <ol>
-      <router-link to="/module/1/exercise/0">
-        Explorando el Teclado
-      </router-link
-      >
+      <li>
+        <router-link to="/module/0/exercise/0">
+          Explorando el Teclado
+        </router-link>
+      </li>
     </ol>
   </div>
 </template>
