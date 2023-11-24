@@ -24,7 +24,7 @@
           v-else
           class="success-img"
           v-show="currentExercise.objective === 'MATCH' && isCorrect"
-          src="/imgs/muy-bien.png"
+          src="/imgs/success-message-img.png"
         />
         <input
           :value="input"
@@ -123,7 +123,7 @@ export default {
       this.input = input.target.value;
     },
     nextPage(navigate) {
-      if (this.isCorrect && this.exerciseInt < this.moduleLength)
+      if (this.isCorrect && this.exerciseInt < this.moduleLength - 1)
       navigate()
     }
   }
@@ -146,7 +146,7 @@ export default {
   margin-top: 40px;
 }
 .success-img {
-  width: 100px;
+  width: 300px;
   position: absolute;
   right: 0;
   top: -100px;
