@@ -1,6 +1,6 @@
 <template>
   <div id="modules-container">
-    <h1>Modulos</h1>
+    <h1>Módulos</h1>
     <ol>
       <li>
         <router-link to="/module/0/exercise/0">
