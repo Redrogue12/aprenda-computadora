@@ -155,7 +155,6 @@ export default {
 <style scoped>
 .container {
   height: 100%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -16,9 +16,3 @@ export default {
   name: "Modulos-View",
 }
 </script>
-
-<style>
-#modules-container {
-  padding: 20px;
-}
-</style>
