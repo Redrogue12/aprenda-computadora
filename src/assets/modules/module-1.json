@@ -52,7 +52,7 @@
   },
   {
     "title": "Teclas de Escritura - Signos",
-    "explanation": "Observe las teclas que tienen más de un objeto, sea números o símbolos. Uno está localizado en la parte superior y el otro en la parte inferior. Para obtener el objeto que está en la parte superior deberá; </br></br> 1. Presionar y sostener la tecla  Shift </br></br> 2. Presionar la tecla deseada </br></br> 3. Soltar la tecla  Shift",
+    "explanation": "Observe las teclas que tienen más de un objeto, sea números o símbolos. Uno está localizado en la parte superior y el otro en la parte inferior. Para obtener el objeto que está en la parte superior deberá; </br></br> 1. Presionar y sostener la tecla <span class='key-highlight'>Shift</span> </br></br> 2. Presionar la tecla deseada </br></br> 3. Soltar la tecla <span, class='key-highlight'>Shift</span>",
     "taskText": "Intenta escribir: 548*4+4,000/2=4,192",
     "objective": "MATCH",
     "match": "548*4+4,000/2=4,192",
