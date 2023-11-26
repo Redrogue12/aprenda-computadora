@@ -27,6 +27,15 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1040px;
+  margin: auto;
+}
+
 .explanation-container {
   padding: 20px;
   border-radius: 5px;
