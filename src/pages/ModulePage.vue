@@ -67,11 +67,11 @@
 </template>
 
 <script>
-import SimpleKeyboard from "./SimpleKeyboard.vue";
+import SimpleKeyboard from "../components/SimpleKeyboard.vue";
 import modules from "../assets/modules/index";
 
 export default {
-  name: "ModuleExercise",
+  name: "Module-Page",
   components: {
     SimpleKeyboard
   },
@@ -96,10 +96,10 @@ export default {
       return Number(this.exercise);
     },
     currentExercise() {
-      return this.modules[this.module][this.exerciseInt];
+      return this.modules[this.module].exercises[this.exerciseInt];
     },
     moduleLength() {
-      return this.modules[this.module].length;
+      return this.modules[this.module].exercises.length;
     },
     previousExercise() {
       return this.exerciseInt - 1;
@@ -139,15 +139,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 1040px;
-  margin: auto;
-}
-
 .exercise-wrapper {
   position: relative;
   margin-top: 40px;
