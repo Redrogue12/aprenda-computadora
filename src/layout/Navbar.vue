@@ -17,9 +17,40 @@
     </router-link>
     <ul class="nav-items">
       <router-link
-        to="/modules"
+        to="/"
+        v-slot="{navigate}"
+        custom
       >
-        <li>Módulos</li>
+        <li
+          class="nav-item"
+          @click="navigate"
+        >
+          Hogar
+        </li>
+      </router-link>
+      <router-link
+        to="/about"
+        v-slot="{navigate}"
+        custom
+      >
+        <li
+          class="nav-item"
+          @click="navigate"
+        >
+          Sobre Mí
+        </li>
+      </router-link>
+      <router-link
+        to="/modules"
+        v-slot="{navigate}"
+        custom
+      >
+        <li
+          class="nav-item"
+          @click="navigate"
+        >
+          Módulos
+        </li>
       </router-link>
     </ul>
   </div>
@@ -51,5 +82,12 @@ export default {
   margin: 0;
   align-self: center;
   list-style-type: none;
+  display: flex;
+}
+.nav-item {
+  margin-right: 12px;
+}
+.nav-item:hover {
+  cursor: pointer;
 }
 </style>
