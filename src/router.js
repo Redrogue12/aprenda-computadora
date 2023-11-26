@@ -1,8 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Modules from './components/Modules.vue'
-import ModuleExercise from './components/ModuleExercise.vue'
-import NotFound from './components/NotFound.vue'
-import HomePage from './components/HomePage.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import NotFound from './components/NotFound.vue';
+import HomePage from './pages/HomePage.vue';
+import AboutPage from './pages/AboutPage.vue';
+import ModulesPage from './pages/ModulesPage.vue';
+import ModulePage from './pages/ModulePage.vue';
 
 // https://router.vuejs.org/guide/essentials/dynamic-matching.html
 export const router = createRouter({
@@ -19,14 +20,19 @@ export const router = createRouter({
       component: HomePage,
     },
     {
+      path: '/about',
+      name: 'about',
+      component: AboutPage,
+    },
+    {
       path: '/modules',
       name: 'modules',
-      component: Modules,
+      component: ModulesPage,
     },
     {
       path: '/module/:module/exercise/:exercise',
       name: 'exercise',
-      component: ModuleExercise,
+      component: ModulePage,
       props: true,
     }
   ],
