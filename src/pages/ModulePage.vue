@@ -29,7 +29,7 @@
       </div>
 
       <div
-        v-if="currentExercise?.textarea"
+        v-if="currentExercise?.textInput"
         class="exercise-wrapper"
       >
         <p
@@ -49,6 +49,7 @@
           <input
             v-for="current in currentExercise.specialInputs"
             :key="current.placeholder"
+            :value="current.input"
             class="task-input"
             :placeholder="current.placeholder"
             @keydown.tab="allowTab"
@@ -56,13 +57,23 @@
         </div>
 
         <input
+          v-else-if="currentExercise.inputType !== `TEXTAREA`"
+          :value="input"
+          class="task-input"
+          @input="onInputChange"
+          placeholder="Escriba aquí"
+          @keydown.tab="allowTab"
+        />
+
+        <textarea
           v-else
           :value="input"
           class="task-input"
           @input="onInputChange"
           placeholder="Escriba aquí"
           @keydown.tab="allowTab"
-        >
+          rows="4"
+        />
       </div>
 
       <div v-if="currentExercise?.keyboard" class="w-100 center">
@@ -149,7 +160,9 @@ export default {
     },
   },
   created() {
-    if (this.exerciseInt >= this.moduleLength) this.$router.push('/')
+    const {input} = this.currentExercise;
+    if (this.exerciseInt >= this.moduleLength) this.$router.push('/');
+    if (input) this.input = input
   },
   methods: {
     onChange(input) {
