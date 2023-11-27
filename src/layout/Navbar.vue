@@ -83,6 +83,7 @@ export default {
   align-self: center;
   list-style-type: none;
   display: flex;
+  white-space: nowrap;
 }
 .nav-item {
   margin-right: 12px;
@@ -90,5 +91,11 @@ export default {
 .nav-item:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  #navbar {
+    height: 80px
+  }
 }
 </style>
