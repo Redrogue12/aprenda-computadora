@@ -78,7 +78,7 @@
     {
       "title": "Teclas de Escritura - Tabulador",
       "explanation": "2. La otra función es cuando entras datos en cuadros de texto. Presionas la tecla <span class='key-highlight'>Tab</span> y se mueve al próximo cuadro. </br></br> 3. Si le das <span class='key-highlight'>Shift</span> y <span class='key-highlight'>Tab</span> simultáneamente se mueve hacia atrás. Para hacerlo fácil, primero presiona la tecla <span class='key-highlight'>Shift</span> y sostenla, luego presionas la tecla <span class='key-highlight'>Tab</span> varias veces y se moverá hacia atrás.",
-      "instructions": "1. Coloca el cursor sobre cuadro del nombre y escribe tu nombre. </br></br> 2. Presiona la tecla <span class='key-highlight'>Tab</span> y escribe tu apellido paterno </br></br> 3. Presiona la tecla <span class='key-highlight'>Tab</span> y escribe tu apellido materno </br></br> 4. Presiona la tecla  <span class='key-highlight'>Shift</span> + <span class='key-highlight'>Tab</span> simultáneamente y el cursor se moverá hacia atrás.",
+      "instructions": "1. Coloca el cursor sobre cuadro del nombre y escribe tu nombre. </br></br> 2. Presiona la tecla <span class='key-highlight'>Tab</span> y escribe tu apellido paterno </br></br> 3. Presiona la tecla <span class='key-highlight'>Tab</span> y escribe tu apellido materno </br></br> 4. Presiona la tecla <span class='key-highlight'>Shift</span> + <span class='key-highlight'>Tab</span> simultáneamente y el cursor se moverá hacia atrás.",
       "objective": "SPECIAL",
       "match": "",
       "keyboard": false,
@@ -93,8 +93,8 @@
       ]
     },
     {
-      "title": "Teclas de Escritura - Tabulador",
-      "explanation": "La tecla de Tabulación tiene dos funciones. </br></br> 1. Cuando comienzas a escribir una oración y presionas la misma salta cinco espacios. Lo puedes hacer en Word cuando quieras hacer la sangría. La tecla originalmente tenía este símbolo que significa que va hacia adelante y hacia atrás.",
+      "title": "Teclas de Escritura - Mayúscula (Shift)",
+      "explanation": "La tecla <b>Fijador de Mayúscula</b> <span class='key-highlight'>Shift</span> se usa cuando comienzas una oración, en los nombres propios incluyendo animales, nombres geográficos, atributos divinos, entre otros.",
       "instructions": "Escribe la palabra <b>Mayúscula</b>. </br></br> 1. Para obtener la letra mayúscula presionas la tecla  <span class='key-highlight'>Shift</span> y sostenla </br></br> 2. Presiona la tecla <span class='key-highlight'>M</span> y suelta la techa <span class='key-highlight'>Shift</span> y ésta aparecerá en mayúscula y continúa con el resto de las letras.",
       "objective": "FREE",
       "match": "",
@@ -102,6 +102,30 @@
       "textarea": true,
       "keys": "",
       "imageSrc": "/7-shift.png",
+      "allowTab": true
+    },
+    {
+      "title": "Teclas de Escritura - Bloquear Mayúscula (Caps lock)",
+      "explanation": "Cuando vas a escribir más de una letra mayúscula, como los títulos de documentos y encabezados, presionas la tecla <span class='key-highlight'>Caps Lock</span> para activarla y todas las letras que escribas serán en mayúscula. Cuanto termines la desactivas y puedes continuar escribiendo el resto del texto. Algunos teclados tienen una luz verde en la tecla indicando que está activada y otros tienen una luz indicadora como muestra la imagen a la derecha en la parte superior derecha.",
+      "instructions": "En el siguiente cuadro de texto escribe en mayúscula la palabra <b>MAYUSCULA</b>",
+      "objective": "MATCH",
+      "match": "MAYUSCULA",
+      "keyboard": false,
+      "textarea": true,
+      "keys": "",
+      "imageSrc": "/8-caps-lock.png",
+      "allowTab": true
+    },
+    {
+      "title": "Teclas de Escritura - Retroceso Backspace",
+      "explanation": "La tecla <span class='key-highlight'>Backspace</span> se usa para borrar, por lo general cuando estás escribiendo y cometes un error, la presionas y borra hacia atrás o sea haca la izquierda hasta corregir el error. En el siguiente ejercicio hay una oración, pero con un error al final.",
+      "instructions": "1. Coloca el cursor después de la letra “s” de la palabra “orasión”. </br></br> 2. Presiona la tecla  Backspace, borra la “s” y escribe la “c”.",
+      "objective": "MATCH",
+      "match": "Elimina el error de esta orasión.",
+      "keyboard": false,
+      "textarea": true,
+      "keys": "",
+      "imageSrc": "/9-backspace.png",
       "allowTab": true
     }
   ]

@@ -37,6 +37,7 @@
         >
           continue intentando
         </p>
+
         <img
           v-else
           class="success-img"
@@ -53,6 +54,7 @@
             @keydown.tab="allowTab"
           >
         </div>
+
         <input
           v-else
           :value="input"
