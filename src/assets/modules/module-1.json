@@ -24,7 +24,7 @@
     {
       "title": "Teclas de escritura",
       "explanation": "Las teclas de Escritura incluyen las que se utilizan para escribir, mover y editar texto tales como; Letras, Símbolos,  Tabulador <span class='key-highlight'>Tab</span>, Bloqueo de Mayúscula <span class='key-highlight'>Caps Lock</span>, Retroceso <span class='key-highlight'>Backspace</span>, Fijador de Mayúscula <span class='key-highlight'>Shift</span>, Barra Espaciadora <span class='key-highlight'>Space Bar</span> y Entrada <span class='key-highlight'>Enter</span>. Con la excepción de la tecla <span class='key-highlight'>Shift</span> y <span class='key-highlight'>Caps Lock</span> todas las demás teclas deben presionarse una sola vez, de lo contrario se repetirán hasta que sueltes la tecla. ",
-      "taskText": "Observe el siguiente cuadro. Presione cualquier tecla de su teclado durante 3 segundos y observe lo que ocurre.",
+      "instructions": "Observe el siguiente cuadro. Presione cualquier tecla de su teclado durante 3 segundos y observe lo que ocurre.",
       "objective": "FREE",
       "keyboard": false,
       "textarea": true,
@@ -34,7 +34,7 @@
     {
       "title": "Teclas de escritura - Letras",
       "explanation": "Las teclas de letra se encuentran en el mismo centro del teclado. Incluyen todas las letras del abecedario.",
-      "taskText": "Escriba su nombre en el cuadro de texto inferior:",
+      "instructions": "Escriba su nombre en el cuadro de texto inferior:",
       "objective": "FREE",
       "keyboard": false,
       "textarea": true,
@@ -44,7 +44,7 @@
     {
       "title": "Teclas de Escritura - Números y Signos",
       "explanation": "Las teclas numéricas se encuentran en la parte superior del teclado. Incluye los números del 0 al nueve. Sobre los números se encuentran los signos numéricos más utilizados. </br></br> Las que están en el teclado numérico a la derecha todavía no las use. Para escribir los números simplemente presionas la tecla del número que desees.",
-      "taskText": "En el cuatro de abajo intenta escribir: 435",
+      "instructions": "En el cuatro de abajo intenta escribir: 435",
       "objective": "MATCH",
       "match": "435",
       "keyboard": false,
@@ -55,7 +55,7 @@
     {
       "title": "Teclas de Escritura - Signos",
       "explanation": "Observe las teclas que tienen más de un objeto, sea números o símbolos. Uno está localizado en la parte superior y el otro en la parte inferior. Para obtener el objeto que está en la parte superior deberá; </br></br> 1. Presionar y sostener la tecla <span class='key-highlight'>Shift</span> </br></br> 2. Presionar la tecla deseada </br></br> 3. Soltar la tecla <span, class='key-highlight'>Shift</span>",
-      "taskText": "Intenta escribir: 548*4+4,000/2=4,192",
+      "instructions": "Intenta escribir: 548*4+4,000/2=4,192",
       "objective": "MATCH",
       "match": "548*4+4,000/2=4,192",
       "keyboard": false,
@@ -65,8 +65,8 @@
     },
     {
       "title": "Teclas de Escritura - Tabulador",
-      "explanation": "La tecla de Tabulación tiene dos funciones. </br></br> 1. Cuando comienzas a escribir una oración y presionas la misma salta cinco espacios. Lo puedes hacer en Word cuando quieras hacer la sangría. La tecla originalmente tenía este símbolo que significa que va hacia adelante y hacia atrás.",
-      "taskText": "Presiona la tecla TAB y escribe tu apodo",
+      "explanation": "La tecla de Tabulación tiene dos funciones: </br></br> 1. Cuando comienzas a escribir una oración y presionas la misma salta cinco espacios. Lo puedes hacer en Word cuando quieras hacer la sangría. La tecla originalmente tenía un símbolo que significaba que va hacia adelante y hacia atrás.",
+      "instructions": "Presiona la tecla TAB y escribe tu apodo",
       "objective": "FREE",
       "match": "",
       "keyboard": false,
@@ -77,8 +77,8 @@
     },
     {
       "title": "Teclas de Escritura - Tabulador",
-      "explanation": "La tecla de Tabulación tiene dos funciones. </br></br> 1. Cuando comienzas a escribir una oración y presionas la misma salta cinco espacios. Lo puedes hacer en Word cuando quieras hacer la sangría. La tecla originalmente tenía este símbolo que significa que va hacia adelante y hacia atrás.",
-      "taskText": "Presiona la tecla TAB y escribe tu apodo",
+      "explanation": "2. La otra función es cuando entras datos en cuadros de texto. Presionas la tecla <span class='key-highlight'>Tab</span> y se mueve al próximo cuadro. </br></br> 3. Si le das <span class='key-highlight'>Shift</span> y <span class='key-highlight'>Tab</span> simultáneamente se mueve hacia atrás. Para hacerlo fácil, primero presiona la tecla <span class='key-highlight'>Shift</span> y sostenla, luego presionas la tecla <span class='key-highlight'>Tab</span> varias veces y se moverá hacia atrás.",
+      "instructions": "1. Coloca el cursor sobre cuadro del nombre y escribe tu nombre. </br></br> 2. Presiona la tecla <span class='key-highlight'>Tab</span> y escribe tu apellido paterno </br></br> 3. Presiona la tecla <span class='key-highlight'>Tab</span> y escribe tu apellido materno </br></br> 4. Presiona la tecla  <span class='key-highlight'>Shift</span> + <span class='key-highlight'>Tab</span> simultáneamente y el cursor se moverá hacia atrás.",
       "objective": "SPECIAL",
       "match": "",
       "keyboard": false,
@@ -91,6 +91,18 @@
         { "placeholder": "Apellido Paterno" },
         { "placeholder": "Apellido Materno" }
       ]
+    },
+    {
+      "title": "Teclas de Escritura - Tabulador",
+      "explanation": "La tecla de Tabulación tiene dos funciones. </br></br> 1. Cuando comienzas a escribir una oración y presionas la misma salta cinco espacios. Lo puedes hacer en Word cuando quieras hacer la sangría. La tecla originalmente tenía este símbolo que significa que va hacia adelante y hacia atrás.",
+      "instructions": "Escribe la palabra <b>Mayúscula</b>. </br></br> 1. Para obtener la letra mayúscula presionas la tecla  <span class='key-highlight'>Shift</span> y sostenla </br></br> 2. Presiona la tecla <span class='key-highlight'>M</span> y suelta la techa <span class='key-highlight'>Shift</span> y ésta aparecerá en mayúscula y continúa con el resto de las letras.",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textarea": true,
+      "keys": "",
+      "imageSrc": "/7-shift.png",
+      "allowTab": true
     }
   ]
 }

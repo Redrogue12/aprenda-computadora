@@ -6,10 +6,27 @@
       <h2>{{ currentExercise?.title }}</h2>
 
       <div class="explanation-container">
-        <div v-html="currentExercise?.explanation" class="instruction-p"></div>
-        <img class="explanation-img" v-if="imageSrc" :src="`/imgs${imageSrc}`" alt="Partes del teclado">
+        <div 
+          v-html="currentExercise?.explanation"
+          class="instruction-p"
+        />
+        <img
+          class="explanation-img"
+          v-if="imageSrc"
+          :src="`/imgs${imageSrc}`"
+          alt="Partes del teclado"
+        >
       </div>
-      <h3 v-if="currentExercise?.taskText">{{ currentExercise?.taskText }}</h3>
+      <div
+        style="margin: 20px"
+        v-if="currentExercise?.instructions"
+      >
+        <h2>Instrucciones</h2>
+        <div
+          v-html="currentExercise?.instructions"
+          class="instruction-p"
+        />
+      </div>
 
       <div
         v-if="currentExercise?.textarea"
@@ -26,7 +43,18 @@
           v-show="currentExercise?.objective === 'MATCH' && isCorrect"
           src="/imgs/success-message-img.png"
         />
+
+        <div v-if="currentExercise?.objective === 'SPECIAL'">
+          <input
+            v-for="current in currentExercise.specialInputs"
+            :key="current.placeholder"
+            class="task-input"
+            :placeholder="current.placeholder"
+            @keydown.tab="allowTab"
+          >
+        </div>
         <input
+          v-else
           :value="input"
           class="task-input"
           @input="onInputChange"
@@ -135,8 +163,10 @@ export default {
       if (this.isCorrect && this.exerciseInt < this.moduleLength - 1) navigate();
     },
     allowTab(e) {
-      if (this.currentExercise.allowTab) this.input += "\t";
-      else e.preventDefault()
+      if (this.currentExercise.allowTab) {
+        e.preventDefault();
+        this.input += "\t";
+      }
     }
   }
 };
@@ -152,5 +182,55 @@ export default {
   position: absolute;
   right: 0;
   top: -100px;
+}
+
+.task-input {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.explanation-container {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #FEFEFA;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.explanation-img {
+  width: 100%;
+  align-self: center;
+  margin: 10px;
+}
+
+#preformatted-text {
+  white-space: pre;
+  text-wrap: wrap;
+}
+
+.instruction-p {
+  font-size: 20px;
+}
+
+#exercise-btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.exercise-btn {
+  padding: 18px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #91A3B9;
+  cursor: pointer;
 }
 </style>
