@@ -8,7 +8,7 @@
       "objective": "FREE",
       "keyboard": false,
       "keys": "",
-      "textarea": false,
+      "textInput": false,
       "imageSrc": ""
     },
     {
@@ -18,7 +18,7 @@
       "objective": "FREE",
       "keyboard": false,
       "keys": "",
-      "textarea": false,
+      "textInput": false,
       "imageSrc": "/1-keyboard-parts.png"
     },
     {
@@ -27,7 +27,7 @@
       "instructions": "Observe el siguiente cuadro. Presione cualquier tecla de su teclado durante 3 segundos y observe lo que ocurre.",
       "objective": "FREE",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/2-main-keys.png"
     },
@@ -37,7 +37,7 @@
       "instructions": "Escriba su nombre en el cuadro de texto inferior:",
       "objective": "FREE",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/3-letter-keys.png"
     },
@@ -48,7 +48,7 @@
       "objective": "MATCH",
       "match": "435",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/4-numbers-signs.png"
     },
@@ -59,7 +59,7 @@
       "objective": "MATCH",
       "match": "548*4+4,000/2=4,192",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/5-sign-keys.png"
     },
@@ -70,7 +70,7 @@
       "objective": "FREE",
       "match": "",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/6-tab.png",
       "allowTab": true
@@ -82,14 +82,14 @@
       "objective": "SPECIAL",
       "match": "",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/6-tab.png",
       "allowTab": false,
       "specialInputs": [
-        { "placeholder": "Nombre" },
-        { "placeholder": "Apellido Paterno" },
-        { "placeholder": "Apellido Materno" }
+        { "placeholder": "Nombre", "input": "" },
+        { "placeholder": "Apellido Paterno", "input": "" },
+        { "placeholder": "Apellido Materno", "input": "" }
       ]
     },
     {
@@ -99,7 +99,7 @@
       "objective": "FREE",
       "match": "",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/7-shift.png",
       "allowTab": true
@@ -111,7 +111,7 @@
       "objective": "MATCH",
       "match": "MAYUSCULA",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/8-caps-lock.png",
       "allowTab": true
@@ -121,12 +121,86 @@
       "explanation": "La tecla <span class='key-highlight'>Backspace</span> se usa para borrar, por lo general cuando estás escribiendo y cometes un error, la presionas y borra hacia atrás o sea haca la izquierda hasta corregir el error. En el siguiente ejercicio hay una oración, pero con un error al final.",
       "instructions": "1. Coloca el cursor después de la letra “s” de la palabra “orasión”. </br></br> 2. Presiona la tecla  Backspace, borra la “s” y escribe la “c”.",
       "objective": "MATCH",
-      "match": "Elimina el error de esta orasión.",
+      "match": "Elimina el error de esta oración.",
       "keyboard": false,
-      "textarea": true,
+      "textInput": true,
       "keys": "",
       "imageSrc": "/9-backspace.png",
-      "allowTab": true
+      "allowTab": true,
+      "input": "Elimina el error de esta orasión."
+    },
+    {
+      "title": "Teclas de Escritura - Retroceso Backspace",
+      "explanation": "La tecla <span class='key-highlight'>Backspace</span> no solo se usa para borrar lo que está al final de una oración. Si usted observa un error en una oración, puede colocar el cursor después de la palabra errónea y borrarla para corregirla. En el siguiente ejercicio hay una palabra incorrecta.",
+      "instructions": "1. Coloca el cursor después de la palabra “horror”. </br></br> 2. Borra la misma con la tecla <span class='key-highlight'>Bakcspace</span>. </br></br> 3. Luego escribe la palabra error.",
+      "objective": "MATCH",
+      "match": "Elimina el error de esta oración.",
+      "keyboard": false,
+      "textInput": true,
+      "keys": "",
+      "imageSrc": "/9-backspace.png",
+      "allowTab": true,
+      "input": "Elimina el horror de esta oración."
+    },
+    {
+      "title": "Teclas de Escritura - Entrada Enter",
+      "explanation": "La tecla <span class='key-highlight'>Enter</span> se usa para para empezar una nueva línea cuando estás escribiendo y en algunos programas de Tab las se mueve a la próxima fila. También se usa para confirmar acciones en cuando un programa lo requiere. Observa la imagen que muestra dos teclas Enter, una en el grupo teclado alfanumérico en el centro y la otra en el teclado numérico.",
+      "instructions": "Escribe tu nombre abajo y presiona <span class='key-highlight'>Enter</span>.",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textInput": true,
+      "keys": "",
+      "imageSrc": "/11-enter.png",
+      "allowTab": true,
+      "input": "",
+      "inputType": "TEXTAREA"
+    },
+    {
+      "title": "Teclas de Control",
+      "explanation": "Las teclas de Control tienen determinadas tareas relacionadas con la computadora. Se pueden usar solas y en combinación con otras teclas. Las teclas son: <span class='key-highlight'>Esc</span>, <span class='key-highlight'>Ctrl</span>, <span class='key-highlight'>Alt</span>, <span class='key-highlight'>Ins</span>, <span class='key-highlight'>Del</span>, <span class='key-highlight'>Print Scr</span> y <span class='key-highlight'>Windows</span>. Las teclas <span class='key-highlight'>Scroll Lock</span> y <span class='key-highlight'>Pause/Break</span> actualmente ya no se usan.",
+      "instructions": "",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textInput": false,
+      "keys": "",
+      "imageSrc": "/12-ctrl.png",
+      "allowTab": true,
+      "input": "",
+      "inputType": "NONE"
+    },
+    {
+      "title": "Teclas de Control - Tecla Windows y Esc",
+      "explanation": "La tecla <span class='key-highlight'>Windows</span> activa el menú del Sistema Operativo Windows y en combinación con otras teclas tiene otras funciones. </br></br> La tecla <span class='key-highlight'>Esc</span> depende del programa que estés utilizando. En algunos te indicará cuando usarla y por lo general es para salir de un programa. Otro uso frecuente es cuando por error activas una ventana emergente y la cierras con esta.",
+      "instructions": "1. Presiona la tecla <span class='key-highlight'>Windows</span> y se abrirá el menú de inicio de Windows. Luego presiona la tecla <span class='key-highlight'>Esc</span> para cerrarla. </br></br> 2. Presiona la tecla <span class='key-highlight'>Windows</span> sostenla y luego presiona la letra <span class='key-highlight'>P</span>, entonces abrirá el menú para conectar la computadora con otro monitor que ha sido conectado previamente. Presiona <span class='key-highlight'>Esc</span> para cerrarla.",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textInput": false,
+      "keys": "",
+      "imageSrc": "/13-esc-win.png",
+      "allowTab": true,
+      "input": "",
+      "inputType": "NONE"
+    },
+    {
+      "title": "Teclas de Control - Tecla Ctrl",
+      "explanation": "Otro de los muchos usos de la tecla <span class='key-highlight'>Ctrl</span> es mover información de un lugar a otro en  combinación con la letra <span class='key-highlight'>X</span>.",
+      "instructions": "1. Dale clic tres veces a la oración en el cuadro izquierdo para sombrearla o seleccionarla (en esta ocasión significa lo mismo). </br></br> 2. Presiona y sostén la tecla <span class='key-highlight'>CTRL</span> y la letra <span class='key-highlight'>X</span>. </br></br> 3. Dale clic en el cuadro de la derecha, presiona el presiona y sostén la tecla <span class='key-highlight'>CTRL</span> y la letra <span class='key-highlight'>V</span>. </br></br> 4. Verás que moviste la oración de un lugar a otro.",
+      "objective": "SPECIAL",
+      "match": "",
+      "keyboard": false,
+      "textInput": true,
+      "keys": "",
+      "imageSrc": "/14-ctrl.png",
+      "allowTab": true,
+      "input": "",
+      "specialInputs": [
+        { "placeholder": "", "input": "Copia este texto" },
+        { "placeholder": "", "input": "" }
+      ],
+      "inputType": "TEXT"
     }
   ]
 }
