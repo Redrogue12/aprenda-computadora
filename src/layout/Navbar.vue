@@ -89,5 +89,6 @@ export default {
 }
 .nav-item:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 </style>
