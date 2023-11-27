@@ -31,6 +31,7 @@
           class="task-input"
           @input="onInputChange"
           placeholder="Escriba aquí"
+          @keydown.tab="allowTab"
         >
       </div>
 
@@ -131,8 +132,11 @@ export default {
       this.input = input.target.value;
     },
     nextPage(navigate) {
-      if (this.isCorrect && this.exerciseInt < this.moduleLength - 1)
-      navigate()
+      if (this.isCorrect && this.exerciseInt < this.moduleLength - 1) navigate();
+    },
+    allowTab(e) {
+      if (this.currentExercise.allowTab) this.input += "\t";
+      else e.preventDefault()
     }
   }
 };
