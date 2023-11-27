@@ -62,6 +62,35 @@
       "textarea": true,
       "keys": "",
       "imageSrc": "/5-sign-keys.png"
+    },
+    {
+      "title": "Teclas de Escritura - Tabulador",
+      "explanation": "La tecla de Tabulación tiene dos funciones. </br></br> 1. Cuando comienzas a escribir una oración y presionas la misma salta cinco espacios. Lo puedes hacer en Word cuando quieras hacer la sangría. La tecla originalmente tenía este símbolo que significa que va hacia adelante y hacia atrás.",
+      "taskText": "Presiona la tecla TAB y escribe tu apodo",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textarea": true,
+      "keys": "",
+      "imageSrc": "/6-tab.png",
+      "allowTab": true
+    },
+    {
+      "title": "Teclas de Escritura - Tabulador",
+      "explanation": "La tecla de Tabulación tiene dos funciones. </br></br> 1. Cuando comienzas a escribir una oración y presionas la misma salta cinco espacios. Lo puedes hacer en Word cuando quieras hacer la sangría. La tecla originalmente tenía este símbolo que significa que va hacia adelante y hacia atrás.",
+      "taskText": "Presiona la tecla TAB y escribe tu apodo",
+      "objective": "SPECIAL",
+      "match": "",
+      "keyboard": false,
+      "textarea": true,
+      "keys": "",
+      "imageSrc": "/6-tab.png",
+      "allowTab": false,
+      "specialInputs": [
+        { "placeholder": "Nombre" },
+        { "placeholder": "Apellido Paterno" },
+        { "placeholder": "Apellido Materno" }
+      ]
     }
   ]
 }
