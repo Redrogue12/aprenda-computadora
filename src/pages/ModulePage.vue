@@ -14,7 +14,7 @@
           class="explanation-img"
           v-if="imageSrc"
           :src="`/imgs${imageSrc}`"
-          alt="Partes del teclado"
+          :alt="imageSrc"
         >
       </div>
       <div
@@ -42,6 +42,7 @@
           v-else
           class="success-img"
           v-show="currentExercise?.objective === 'MATCH' && isCorrect"
+          alt="success-image"
           src="/imgs/success-message-img.png"
         />
 
