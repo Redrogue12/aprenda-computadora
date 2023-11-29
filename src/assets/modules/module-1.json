@@ -7,7 +7,6 @@
       "task": false,
       "objective": "FREE",
       "keyboard": false,
-      "keys": "",
       "textInput": false,
       "imageSrc": ""
     },
@@ -17,7 +16,6 @@
       "task": "Mueve el ratón sobre el dibujo para iluminar cada parte.",
       "objective": "FREE",
       "keyboard": false,
-      "keys": "",
       "textInput": false,
       "imageSrc": "/1-keyboard-parts.png"
     },
@@ -28,7 +26,6 @@
       "objective": "FREE",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/2-main-keys.png"
     },
     {
@@ -38,7 +35,6 @@
       "objective": "FREE",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/3-letter-keys.png"
     },
     {
@@ -49,7 +45,7 @@
       "match": "435",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
+      
       "imageSrc": "/4-numbers-signs.png"
     },
     {
@@ -60,7 +56,6 @@
       "match": "548*4+4,000/2=4,192",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/5-sign-keys.png"
     },
     {
@@ -71,7 +66,6 @@
       "match": "",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/6-tab.png",
       "allowTab": true
     },
@@ -83,7 +77,7 @@
       "match": "",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
+      
       "imageSrc": "/6-tab.png",
       "allowTab": false,
       "specialInputs": [
@@ -100,7 +94,6 @@
       "match": "",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/7-shift.png",
       "allowTab": true
     },
@@ -112,7 +105,6 @@
       "match": "MAYUSCULA",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/8-caps-lock.png",
       "allowTab": true
     },
@@ -124,7 +116,6 @@
       "match": "Elimina el error de esta oración.",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/9-backspace.png",
       "allowTab": true,
       "input": "Elimina el error de esta orasión."
@@ -137,7 +128,6 @@
       "match": "Elimina el error de esta oración.",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/9-backspace.png",
       "allowTab": true,
       "input": "Elimina el horror de esta oración."
@@ -150,7 +140,6 @@
       "match": "",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/11-enter.png",
       "allowTab": true,
       "input": "",
@@ -164,7 +153,6 @@
       "match": "",
       "keyboard": false,
       "textInput": false,
-      "keys": "",
       "imageSrc": "/12-ctrl.png",
       "allowTab": true,
       "input": "",
@@ -178,7 +166,6 @@
       "match": "",
       "keyboard": false,
       "textInput": false,
-      "keys": "",
       "imageSrc": "/13-esc-win.png",
       "allowTab": true,
       "input": "",
@@ -192,7 +179,6 @@
       "match": "",
       "keyboard": false,
       "textInput": true,
-      "keys": "",
       "imageSrc": "/14-ctrl.png",
       "allowTab": true,
       "input": "",
@@ -201,6 +187,111 @@
         { "placeholder": "", "input": "" }
       ],
       "inputType": "TEXT"
+    },
+    {
+      "title": "Teclas de Control - Tecla Del",
+      "explanation": "La tecla <span class='key-highlight'>Del</span> al igual que la tecla <span class='key-highlight'>Backspace</span> borra los caracteres, pero borra los que están a la derecha.",
+      "instructions": "En el cuadro inferior corrige los dos errores ortográficos con la tecla <span class='key-highlight'>Del</span>. </br></br> 1. Coloca el cursor antes de la letra <b>“i”</b> de la palabra <b>“estoi”</b> y presiona la tecla <span class='key-highlight'>Del</span> para borrarla y escribe la <b>“y”</b> para corregirla. </br></br> 2. Repite los mismos pasos para la palabra <b>“uzar”</b> y borra la letra <b>“z”</b> y escribe la <b>“s”</b>.",
+      "objective": "MATCH",
+      "match": "¡Qué bueno que estoy aprendiendo a usar el teclado poco a poco!",
+      "keyboard": false,
+      "textInput": true,
+      "imageSrc": "/15-del.png",
+      "allowTab": true,
+      "input": "¡Qué bueno que estoi aprendiendo a uzar el teclado poco a poco!",
+      "specialInputs": "",
+      "inputType": "TEXT"
+    },
+    {
+      "title": "Teclas de Control - Tecla Alt",
+      "explanation": "La tecla <span class='key-highlight'>Alt</span> por sí sola no tiene ninguna función, pero en combinación con otras teclas nos permite insertar caracteres que no están incluidos en el teclado tales como; © y  ®, entre otros. También nos permite cerrar ventanas, activar menús, etc. Algunos programas la usan para sus propias funciones.",
+      "instructions": "1. Dale clic a al primer cuadro y presiona tecla <span class='key-highlight'>Alt</span>, sostenla y escribe en el teclado numérico el número 160 y presiona la tecla <span class='key-highlight'>Tab</span>. </br></br> 2. Observa que se movió a al próximo cuadro. </br></br> Sigue las mismas instrucciones con los números: 130, 161, 162, 163 y 164.",
+      "objective": "SPECIAL",
+      "match": "",
+      "keyboard": false,
+      "textInput": true,
+      "imageSrc": "/16-alt.png",
+      "allowTab": false,
+      "input": "",
+      "specialInputs": [
+        { "placeholder": "", "input": "" },
+        { "placeholder": "", "input": "" },
+        { "placeholder": "", "input": "" },
+        { "placeholder": "", "input": "" },
+        { "placeholder": "", "input": "" },
+        { "placeholder": "", "input": "" }
+      ],
+      "inputType": "TEXT"
+    },
+    {
+      "title": "Teclas de Control - Print Screen",
+      "explanation": "La tecla <span class='key-highlight'>Prn Scr</span> significa <b>“Print Screen”</b> o sea imprimir pantalla. Esto no significa que lo que está en pantalla saldrá en la impresora. Simplemente lo que hace es guardar temporeramente en memoria una foto del contenido en pantalla la cual puedes hacer aparecer en un procesador de texto con el comando <b>“Copiar”</b>. Si oprimes las teclas <span class='key-highlight'>Ctrl</span> + <span class='key-highlight'>V</span> saldrá la pantalla en la página. </br></br> <img src='/imgs/17-prn-scr.png' class='w-100' /> </br></br> Si combinas las teclas <span class='key-highlight'>Alt</span> + <span class='key-highlight'>Prt Scr</span> copiarás la ventana activa si tuvieras más de una ventana abierta. </br></br> A continuación, dos ejemplos de cómo copiar con <span class='key-highlight'>Prt Scr</span> y con <span class='key-highlight'>Alt</span> + <span class='key-highlight'>Prt Scr</span>. </br></br> La imagen que ven abajo es lo que se ve en mi pantalla con una ventana de internet media abierta (no cubre la pantalla completa). Si presiono la tecla <span class='key-highlight'>Prn Scr</span> en Word, saldría exactamente lo que está en mi pantalla. </br></br> <img src='/imgs/18-screen.png' class='w-100' /> </br></br> Si en mi pantalla tengo activa o sea que estoy usando la ventana que está media abierta y presiono la tecla <span class='key-highlight'>Alt</span> + <span class='key-highlight'>Prn Scr</span> en Word saldría la ventana activa según muestra la imagen abajo. </br></br> <img src='/imgs/19-screen-2.png' class='w-100' />",
+      "instructions": "",
+      "objective": "NONE",
+      "match": "",
+      "keyboard": false,
+      "textInput": false,
+      "imageSrc": "",
+      "allowTab": false,
+      "input": "",
+      "specialInputs": "",
+      "inputType": "NONE"
+    },
+    {
+      "title": "Teclas de Función",
+      "explanation": "Las teclas de Función al igual que la tecla <span class='key-highlight'>Alt</span> y <span class='key-highlight'>Ctrl</span>, tienen unas funciones específicas dependiendo del programa que estés usando. Estas funcionan por sí misma y en combinación.  En un programa de contabilidad no funcionarían igual que en uno de diseño.",
+      "instructions": "En el cuadro inferior dale clic tres veces en cualquier parte del texto seleccionar y presiona la tecla <span class='key-highlight'>F1</span> y la <span class='key-highlight'>F2</span>",
+      "objective": "FREE",
+      "match": "¡Qué bueno que estoy aprendiendo a usar el teclado poco a poco!",
+      "keyboard": false,
+      "textInput": true,
+      "imageSrc": "/20-function.png",
+      "allowTab": false,
+      "input": "En este ejercicio se programaron la F1 y F2 para agrandar y achicar el tamaño del texto.",
+      "specialInputs": "",
+      "inputType": "TEXT"
+    },
+    {
+      "title": "Teclas de Función - Botones de Símbolos",
+      "explanation": "La tecla <span class='key-highlight'>Fn</span> es más común en lo teclados de las computadoras portátiles (Laptops). Por sí sola no tiene uso y por lo general se combina con unos símbolos relacionados al ajuste de los componentes de la computadora. En el teclado de la computadora de escritorio que es más grande tiene unas pequeñas teclas con símbolos con ciertas funciones. Pero el teclado de la portátil se combina la tecla <span class='key-highlight'>Fn</span> con unas teclas con dos funciones. Por lo general se encuentra al lado o cerca de la tecla <span class='key-highlight'>Ctrl</span> y <span class='key-highlight'>Alt</span>",
+      "instructions": "",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textInput": false,
+      "imageSrc": "/21-symbol.png",
+      "allowTab": false,
+      "input": "",
+      "specialInputs": "",
+      "inputType": "TEXT"
+    },
+    {
+      "title": "Teclas de Navegación - Inicio (Home)",
+      "explanation": "Las teclas <span class='key-highlight'>Home</span> y <span class='key-highlight'>End</span> colocan el cursor al principio y al final de la línea. En algunos programas en combinación con la tecla <span class='key-highlight'>Ctrl</span> coloca el cursor en la primera página y en la última página.",
+      "instructions": "1. En el cuadro inferior coloca el cursor en el centro donde desee y presiona la tecla <span class='key-highlight'>Home</span>. Observa a dónde se movió. </br></br> 2. Presiona la tecla <span class='key-highlight'>End</span>. Observa a dónde se movió y repite varias veces el ejercicio. </br></br> 3. Presiona las teclas <span class='key-highlight'>Ctrl</span> + <span class='key-highlight'>Home</span>. Observa a dónde se movió. </br></br> 4. Presiona las teclas <span class='key-highlight'>Ctrl</span> + <span class='key-highlight'>End</span> y observa a dónde se movió y repite varias veces el ejercicio.",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textInput": true,
+      "imageSrc": "/23-end.png",
+      "allowTab": false,
+      "input": "Las teclas de Navegación se utilizan para desplazarse en las páginas de Internet y de texto. Una pantalla de computadora no puede mostrar a la vez toda la información disponible para lo cual es necesario identificar las teclas que nos permitan movernos de un lugar a otro para ser más eficientes. Aunque el mouse nos permite movernos también en algunas ocasiones el teclado nos ayuda, pero solo con la práctica usted encontrará su mejor uso. Algunas abreviaturas podrían aplicar en algunos teclados, al igual que las flechas podrían ser sustituidas por un símbolo como el siguiente:",
+      "specialInputs": "",
+      "inputType": "TEXTAREA"
+    },
+    {
+      "title": "Teclas de Navegación - Inicio (Home)",
+      "explanation": "Las Flechas direccionales nos permiten mover el cursor a todas las direcciones verticales (arriba y abajo) y horizontales (derecha e izquierda).",
+      "instructions": "En el cuadro inferior coloca el cursor en el lugar donde desees y mueve las flechas direccionales en las cuatro direcciones; arriba, abajo, derecha e izquierda.",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textInput": true,
+      "imageSrc": "/24-arrows.png",
+      "allowTab": false,
+      "input": "Las teclas de Navegación se utilizan para desplazarse en las páginas de Internet y de texto. Una pantalla de computadora no puede mostrar a la vez toda la información disponible para lo cual es necesario identificar las teclas que nos permitan movernos de un lugar a otro para ser más eficientes. Aunque el mouse nos permite movernos también en algunas ocasiones el teclado nos ayuda, pero solo con la práctica usted encontrará su mejor uso. Algunas abreviaturas podrían aplicar en algunos teclados, al igual que las flechas podrían ser sustituidas por un símbolo como el siguiente:",
+      "specialInputs": "",
+      "inputType": "TEXTAREA"
     }
   ]
 }
