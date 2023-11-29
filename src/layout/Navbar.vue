@@ -25,7 +25,7 @@
           class="nav-item"
           @click="navigate"
         >
-          Hogar
+          Inicio
         </li>
       </router-link>
       <router-link
