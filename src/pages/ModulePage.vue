@@ -211,7 +211,7 @@ export default {
 }
 
 .explanation-container {
-  padding: 20px;
+  padding: 22px;
   border-radius: 5px;
   background-color: #FEFEFA;
   display: flex;
@@ -231,7 +231,8 @@ export default {
 }
 
 .instruction-p {
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 #exercise-btn-container {

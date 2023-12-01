@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 1040px;
+  max-width: 1200px;
   margin: auto;
 }
 
