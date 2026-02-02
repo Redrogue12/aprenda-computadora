@@ -32,7 +32,7 @@
           class="success-img"
           v-show="currentExercise?.objective === 'MATCH' && isCorrect"
           alt="success-image"
-          src="public/imgs/success-message-img.png"
+          src="/imgs/success-message-img.png"
         />
 
         <div v-if="currentExercise?.objective === 'SPECIAL'">
