@@ -6,34 +6,23 @@
       <h2>{{ currentExercise?.title }}</h2>
 
       <div class="explanation-container">
-        <div 
-          v-html="currentExercise?.explanation"
-          class="instruction-p"
-        />
+        <div v-html="currentExercise?.explanation" class="instruction-p" />
         <img
           class="explanation-img"
           v-if="imageSrc"
-          :src="`/imgs${imageSrc}`"
+          :src="`/imgs/${imageSrc}`"
           :alt="imageSrc"
-        >
-      </div>
-      <div
-        style="margin: 20px"
-        v-if="currentExercise?.instructions"
-      >
-        <h2>Instrucciones</h2>
-        <div
-          v-html="currentExercise?.instructions"
-          class="instruction-p"
         />
       </div>
+      <div style="margin: 20px" v-if="currentExercise?.instructions">
+        <h2>Instrucciones</h2>
+        <div v-html="currentExercise?.instructions" class="instruction-p" />
+      </div>
 
-      <div
-        v-if="currentExercise?.textInput"
-        class="exercise-wrapper"
-      >
+      <div v-if="currentExercise?.textInput" class="exercise-wrapper">
         <p
-          v-if="currentExercise?.objective === 'MATCH' && !isCorrect" class="red"
+          v-if="currentExercise?.objective === 'MATCH' && !isCorrect"
+          class="red"
         >
           continue intentando
         </p>
@@ -43,7 +32,7 @@
           class="success-img"
           v-show="currentExercise?.objective === 'MATCH' && isCorrect"
           alt="success-image"
-          src="/imgs/success-message-img.png"
+          src="public/imgs/success-message-img.png"
         />
 
         <div v-if="currentExercise?.objective === 'SPECIAL'">
@@ -54,7 +43,7 @@
             class="task-input"
             :placeholder="current.placeholder"
             @keydown.tab="allowTab"
-          >
+          />
         </div>
 
         <input
@@ -78,7 +67,12 @@
       </div>
 
       <div v-if="currentExercise?.keyboard" class="w-100 center">
-        <SimpleKeyboard :keys="currentExercise?.keys" @onChange="onChange" @onKeyPress="onKeyPress" :input="input" />
+        <SimpleKeyboard
+          :keys="currentExercise?.keys"
+          @onChange="onChange"
+          @onKeyPress="onKeyPress"
+          :input="input"
+        />
       </div>
     </div>
     <div id="exercise-btn-container">
@@ -86,22 +80,16 @@
         v-if="exerciseInt > 0"
         :to="`/module/${module}/exercise/${previousExercise}`"
       >
-        <button
-          class="exercise-btn" 
-          style="margin-right: 20px"
-        >
+        <button class="exercise-btn" style="margin-right: 20px">
           Regresar
         </button>
       </router-link>
       <router-link
         :to="`/module/${module}/exercise/${nextExercise}`"
-        v-slot="{navigate}"
+        v-slot="{ navigate }"
         custom
       >
-        <button
-          class="exercise-btn"
-          @click="nextPage(navigate)"
-        >
+        <button class="exercise-btn" @click="nextPage(navigate)">
           Continuar
         </button>
       </router-link>
@@ -111,24 +99,24 @@
 
 <script>
 import SimpleKeyboard from "../components/SimpleKeyboard.vue";
-import modules from "../assets/modules/index";
+import modules from "../assets/modules/index.js";
 
 export default {
   name: "Module-Page",
   components: {
-    SimpleKeyboard
+    SimpleKeyboard,
   },
   props: {
     module: {
       type: String,
       required: true,
-      default: "0"
+      default: "0",
     },
     exercise: {
       type: String,
       required: true,
-      default: "0"
-    }
+      default: "0",
+    },
   },
   data: () => ({
     input: "",
@@ -156,14 +144,15 @@ export default {
     isCorrect() {
       const { objective } = this.currentExercise;
       if (objective === "FREE") return true;
-      else if (objective === "MATCH") return this.input === this.currentExercise.match;
+      else if (objective === "MATCH")
+        return this.input === this.currentExercise.match;
       else return true;
     },
   },
   created() {
-    const {input} = this.currentExercise;
-    if (this.exerciseInt >= this.moduleLength) this.$router.push('/');
-    if (input) this.input = input
+    const { input } = this.currentExercise;
+    if (this.exerciseInt >= this.moduleLength) this.$router.push("/");
+    if (input) this.input = input;
   },
   methods: {
     onChange(input) {
@@ -176,15 +165,16 @@ export default {
       this.input = input.target.value;
     },
     nextPage(navigate) {
-      if (this.isCorrect && this.exerciseInt < this.moduleLength - 1) navigate();
+      if (this.isCorrect && this.exerciseInt < this.moduleLength - 1)
+        navigate();
     },
     allowTab(e) {
       if (this.currentExercise.allowTab) {
         e.preventDefault();
         this.input += "\t";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -213,7 +203,7 @@ export default {
 .explanation-container {
   padding: 22px;
   border-radius: 5px;
-  background-color: #FEFEFA;
+  background-color: #fefefa;
   display: flex;
   flex-direction: column;
   line-height: 1.4;
@@ -248,7 +238,7 @@ export default {
   font-size: 24px;
   font-weight: 700;
   color: #fff;
-  background-color: #91A3B9;
+  background-color: #91a3b9;
   cursor: pointer;
 }
 </style>

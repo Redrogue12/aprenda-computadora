@@ -1,13 +1,14 @@
-* {
+src/main.js * {
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   min-height: 100%;
 }
 
 body {
-  background-color: #ACC6DF;
+  background-color: #acc6df;
 }
 
 #app {
@@ -49,11 +50,11 @@ body {
 }
 
 .red {
-  color: #DB222A;
+  color: #db222a;
 }
 
 .green {
-  color: #1A936F;
+  color: #1a936f;
 }
 
 .key-highlight {

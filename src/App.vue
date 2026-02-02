@@ -8,17 +8,17 @@
 
 <script>
 import "./assets/css/style.css";
-import 'normalize.css';
-import Navbar from './layout/Navbar';
-import Footer from './layout/Footer';
+import "normalize.css";
+import Navbar from "./layout/Navbar.vue";
+import Footer from "./layout/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Navbar,
     Footer,
-  }
-}
+  },
+};
 </script>
 
 <style>

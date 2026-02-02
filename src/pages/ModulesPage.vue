@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import modules from "../assets/modules/index";
+import modules from "../assets/modules/index.js";
 
 export default {
   name: "Modules-Page",
