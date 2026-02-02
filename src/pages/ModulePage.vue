@@ -220,9 +220,10 @@ export default {
 }
 
 .explanation-img {
-  width: 100%;
+  max-width: 960px;
   align-self: center;
   margin: 10px;
+  width: 500px;
 }
 
 #preformatted-text {
