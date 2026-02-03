@@ -207,13 +207,14 @@ export default {
   display: flex;
   flex-direction: column;
   line-height: 1.4;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .explanation-img {
   max-width: 960px;
   align-self: center;
   margin: 10px;
-  width: 500px;
 }
 
 #preformatted-text {
@@ -240,5 +241,11 @@ export default {
   color: #fff;
   background-color: #91a3b9;
   cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .explanation-img {
+    max-width: 100%;
+  }
 }
 </style>
