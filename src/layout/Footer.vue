@@ -1,18 +1,13 @@
 <template>
-  <div
-    id="footer"
-    class="w-100"  
-  >
-    <span>
-      @copyright 2023
-    </span>
+  <div id="footer" class="w-100">
+    <span> @copyright 2023 </span>
   </div>
 </template>
 
 <script>
 export default {
   name: "FootEr",
-}
+};
 </script>
 
 <style scoped>

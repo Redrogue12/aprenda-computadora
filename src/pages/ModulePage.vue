@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h1>Explorando el Teclado</h1>
+      <h1>{{ module?.name }}</h1>
 
       <h2>{{ currentExercise?.title }}</h2>
 
@@ -10,7 +10,7 @@
         <img
           class="explanation-img"
           v-if="imageSrc"
-          :src="`/imgs/${imageSrc}`"
+          :src="`/imgs${imageSrc}`"
           :alt="imageSrc"
         />
       </div>

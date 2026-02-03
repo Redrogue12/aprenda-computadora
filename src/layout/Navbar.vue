@@ -1,56 +1,17 @@
 <template>
-  <div
-    id="navbar"
-    class="w-100"  
-  >
-    <router-link
-      to="/"
-      v-slot="{navigate}"
-      custom
-    >
-      <span
-        id="logo"
-        @click="navigate"
-      >
-        Aprenda Computadora Paso a Paso
-      </span>
+  <div id="navbar" class="w-100">
+    <router-link to="/" v-slot="{ navigate }" custom>
+      <span id="logo" @click="navigate"> Aprenda Computadora Paso a Paso </span>
     </router-link>
     <ul class="nav-items">
-      <router-link
-        to="/"
-        v-slot="{navigate}"
-        custom
-      >
-        <li
-          class="nav-item"
-          @click="navigate"
-        >
-          Inicio
-        </li>
+      <router-link to="/" v-slot="{ navigate }" custom>
+        <li class="nav-item" @click="navigate">Inicio</li>
       </router-link>
-      <router-link
-        to="/about"
-        v-slot="{navigate}"
-        custom
-      >
-        <li
-          class="nav-item"
-          @click="navigate"
-        >
-          Sobre Mí
-        </li>
+      <router-link to="/about" v-slot="{ navigate }" custom>
+        <li class="nav-item" @click="navigate">Sobre Mí</li>
       </router-link>
-      <router-link
-        to="/modules"
-        v-slot="{navigate}"
-        custom
-      >
-        <li
-          class="nav-item"
-          @click="navigate"
-        >
-          Módulos
-        </li>
+      <router-link to="/modules" v-slot="{ navigate }" custom>
+        <li class="nav-item" @click="navigate">Módulos</li>
       </router-link>
     </ul>
   </div>
@@ -59,7 +20,7 @@
 <script>
 export default {
   name: "NavBar",
-}
+};
 </script>
 
 <style scoped>
@@ -95,7 +56,7 @@ export default {
 
 @media screen and (max-width: 480px) {
   #navbar {
-    height: 80px
+    height: 80px;
   }
 }
 </style>

@@ -1,67 +1,76 @@
 {
-  "name": "Explorando el Teclado 222222",
+  "name": "Introducción a Ratoneando",
   "exercises": [
     {
-      "title": "",
-      "explanation": "Instrucciones Generales: Este laboratorio le llevará paso a paso a identificar todos los componentes del teclado y las funciones de cada tecla.​ </br></br> Lea bien y siga las instrucciones.​ </br></br> 1. En las definiciones y ejercicios las teclas estarán identificadas según el siguiente ejemplo con el fondo negro y la letra blanca: <span class='key-highlight'>Tab</span> </br></br> 2. Pulse el botón abajo <b>(Continuar)</b> para continuar los ejercicios. Si desea repetir el ejercicio puede darle <b>Continuar</b> y luego <b>Regresar</b> para repetirlo​​",
+      "title": "Introducción",
+      "explanation": "Este cursillo le ayudara a aprender a usar el ratón y a familiarizarse con la computadora. Lea cada página y siga las instrucciones para desarrollar su habilidad para usar el ratón.​​",
       "task": false,
       "objective": "FREE",
       "keyboard": false,
       "keys": "",
       "textarea": false,
-      "imageSrc": ""
+      "imageSrc": "/modulo-2/1-mouse-bg.gif"
     },
     {
-      "title": "Partes del Teclado",
-      "explanation": "El teclado de la computadora tiene la misma configuración del teclado de la maquinilla. El mismo ha ido evolucionando y se han añadido algunas teclas y se han aumentado sus funciones. Aunque todos los teclados deberían ser iguales, es posible que algunos símbolos podrían verse diferentes y algunos nombres de las teclas son abreviados. Verifique su teclado mientras realiza los ejercicios y observe bien las ilustraciones de las localizaciones de las teclas para que no tenga dudas. El ejercicio se hará con el teclado  idioma Inglés que se usa en Puerto Rico, que no tiene algunos caracteres del lenguaje español.​ </br></br> El teclado se divide en 5 partes.",
-      "task": "Mueve el ratón sobre el dibujo para iluminar cada parte.",
+      "title": "¿Que es el ratón?",
+      "explanation": "El ratón es una herramienta del tamaño de la palma de la mano y se utiliza para controlar el movimiento del puntero en la pantalla de la computadora.",
       "objective": "FREE",
       "keyboard": false,
       "keys": "",
       "textarea": false,
-      "imageSrc": "/1-keyboard-parts.png"
+      "imageSrc": "/modulo-2/2-mac-mouse.jpg"
     },
     {
-      "title": "Teclas de escritura",
-      "explanation": "Las teclas de Escritura incluyen las que se utilizan para escribir, mover y editar texto tales como; Letras, Símbolos,  Tabulador <span class='key-highlight'>Tab</span>, Bloqueo de Mayúscula <span class='key-highlight'>Caps Lock</span>, Retroceso <span class='key-highlight'>Backspace</span>, Fijador de Mayúscula <span class='key-highlight'>Shift</span>, Barra Espaciadora <span class='key-highlight'>Space Bar</span> y Entrada <span class='key-highlight'>Enter</span>. Con la excepción de la tecla <span class='key-highlight'>Shift</span> y <span class='key-highlight'>Caps Lock</span> todas las demás teclas deben presionarse una sola vez, de lo contrario se repetirán hasta que sueltes la tecla. ",
-      "taskText": "Observe el siguiente cuadro. Presione cualquier tecla de su teclado durante 3 segundos y observe lo que ocurre.",
+      "title": "Click",
+      "explanation": "El cursor actúa como nuestro dedo virtual para señalar en la pantalla de la computadora permitiéndonos pulsar los botones, para seleccionar objetos del menú, y para interactuar con otros objetos que nosotros vemos en la pantalla de la computadora.",
       "objective": "FREE",
       "keyboard": false,
-      "textarea": true,
+      "textarea": false,
       "keys": "",
-      "imageSrc": "/2-main-keys.png"
+      "imageSrc": "/modulo-2/3-click.gif"
     },
     {
-      "title": "Teclas de escritura - Letras",
-      "explanation": "Las teclas de letra se encuentran en el mismo centro del teclado. Incluyen todas las letras del abecedario.",
-      "taskText": "Escriba su nombre en el cuadro de texto inferior:",
+      "title": "Presentando el Cursor",
+      "explanation": "El Cursor normalmente aparece como una flecha en la pantalla, pero la apariencia cambia dependiendo del punto en que se encuentre el ratón en la pantalla y el programa que esté usando.",
+      "taskText": "",
       "objective": "FREE",
       "keyboard": false,
-      "textarea": true,
+      "textarea": false,
       "keys": "",
-      "imageSrc": "/3-letter-keys.png"
+      "imageSrc": "/modulo-2/4-cursores.png"
     },
     {
-      "title": "Teclas de Escritura - Números y Signos",
-      "explanation": "Las teclas numéricas se encuentran en la parte superior del teclado. Incluye los números del 0 al nueve. Sobre los números se encuentran los signos numéricos más utilizados. </br></br> Las que están en el teclado numérico a la derecha todavía no las use. Para escribir los números simplemente presionas la tecla del número que desees.",
+      "title": "Movimiento del Cursor",
+      "explanation": "Movemos el cursor en la pantalla moviendo el ratón sobre una superficie plana como una almohadilla especial para el ratón o sobre una parte limpia del escritorio.",
       "taskText": "En el cuatro de abajo intenta escribir: 435",
-      "objective": "MATCH",
-      "match": "435",
+      "objective": "FREE",
+      "match": "",
       "keyboard": false,
-      "textarea": true,
+      "textarea": false,
       "keys": "",
-      "imageSrc": "/4-numbers-signs.png"
+      "imageSrc": "/modulo-2/5-mouse1.gif"
     },
     {
-      "title": "Teclas de Escritura - Signos",
-      "explanation": "Observe las teclas que tienen más de un objeto, sea números o símbolos. Uno está localizado en la parte superior y el otro en la parte inferior. Para obtener el objeto que está en la parte superior deberá; </br></br> 1. Presionar y sostener la tecla <span class='key-highlight'>Shift</span> </br></br> 2. Presionar la tecla deseada </br></br> 3. Soltar la tecla <span, class='key-highlight'>Shift</span>",
-      "taskText": "Intenta escribir: 548*4+4,000/2=4,192",
-      "objective": "MATCH",
-      "match": "548*4+4,000/2=4,192",
+      "title": "Botones del Ratón",
+      "explanation": "Para interactuar con otros objetos que vemos en la pantalla de la computadora, movemos el cursor sobre el objeto y pulsamos los botones. \n Casi todos los ratones de las computadoras Macintosh tienen un botón, pero algunos tienen dos botones.",
+      "taskText": "",
+      "objective": "FREE",
+      "match": "",
       "keyboard": false,
-      "textarea": true,
+      "textarea": false,
       "keys": "",
-      "imageSrc": "/5-sign-keys.png"
+      "imageSrc": "/modulo-2/6-mac-buttons.gif"
+    },
+    {
+      "title": "Compensando",
+      "explanation": "¡Ahora que sabemos para qué usamos el ratón, vamos a comenzar a usarlo!",
+      "taskText": "",
+      "objective": "FREE",
+      "match": "",
+      "keyboard": false,
+      "textarea": false,
+      "keys": "",
+      "imageSrc": "/modulo-2/7-mouse2.gif"
     }
   ]
 }
